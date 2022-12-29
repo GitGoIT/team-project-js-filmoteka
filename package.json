@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://vladpolischchuk.github.io/team-project-filmoteka",
+  "homepage": "https://github.com/GitGoIT/team-project-js-filmoteka.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-filmoteka/"
+    "build": "parcel build src/*.html --public-url /team-project-js-filmoteka/"
   },
   "repository": {
     "type": "git",
