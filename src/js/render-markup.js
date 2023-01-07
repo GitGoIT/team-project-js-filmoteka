@@ -4,7 +4,7 @@ export default function objectTpl(data) { // функцію шаблону ма�
     const markup = data.map(object => { // мапимо дані з API в заготовку html для картки, огортаємо зображення в лінк для підключення simplelightbox
 
         return `<li class="card">
-                <a href="" class="card-link link">
+                <a href="" class="card-link link" data-id="${object.id}">
                 <img class="card-img" src="${basicImgURL}${object.poster_path}" alt="">
                 <h3 class="card-name">${object.original_title}</h3>
                 <div class="card-item">
