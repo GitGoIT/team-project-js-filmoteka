@@ -17,11 +17,17 @@ getCardId.addEventListener('click', handler); // ловимо атрибут dat
 
 const STORAGE_KEY = 'mylibrary-card-id'; // замінюємо зрозумілою константою назву ключа в local storage (необов'язково)
 
-let ID = [];
+
+
+
+const array = JSON.parse(localStorage.getItem(STORAGE_KEY));
+
+console.log(array);
 
 function setMylibraryCard(evt) {
-  const newID = ID.push(evt);
-  localStorage.setItem(STORAGE_KEY, newID); // метод для запису ключа/значення в local storage
-  console.log(JSON.parse(window.localStorage.getItem(STORAGE_KEY)));
+  array.push(evt);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(array)); // метод для запису ключа/значення в local storage
+  console.log(JSON.parse(localStorage.getItem(STORAGE_KEY)));
+
 }
 
